@@ -1,0 +1,13 @@
+# My first mozilla config
+ac_add_options --disable-rust
+ac_add_options --host=x86_64-pc-mingw32
+#CPU_TYPE-MANUFACTURER-OPERATING_SYSTEM
+ac_add_options --target=arm-windows-mingw32
+ac_add_options  --enable-debug
+ac_add_options  --disable-optimize
+ac_add_options  --without-intl-api
+
+export CC="c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe"
+export CXX="c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe"
+export HOST_CC="c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64/cl.exe"
+export HOST_CXX="c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64/cl.exe"
