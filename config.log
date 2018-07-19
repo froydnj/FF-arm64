@@ -1,0 +1,868 @@
+INFO: Adding configure options from c:\mozilla-source\mozilla-esr52\mozconfig
+INFO:   --disable-rust
+INFO:   --host=x86_64-pc-mingw32
+INFO:   --target=arm-windows-mingw32
+INFO:   --enable-debug
+INFO:   --disable-optimize
+INFO:   --without-intl-api
+INFO:   CC=c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe
+INFO:   CXX=c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe
+INFO:   HOST_CXX=c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64/cl.exe
+INFO:   HOST_CC=c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64/cl.exe
+INFO: checking for a shell... 
+INFO: C:/mozilla-build/msys/bin/sh.exe
+INFO: checking for host system type... 
+INFO: x86_64-pc-mingw32
+INFO: checking for target system type... 
+INFO: arm-windows-mingw32
+INFO: checking whether cross compiling... 
+INFO: yes
+INFO: checking for pkg_config... 
+DEBUG: pkg_config: Trying pkg-config
+INFO: not found
+INFO: checking for yasm... 
+DEBUG: yasm: Trying yasm
+INFO: c:/mozilla-build/bin/yasm.EXE
+INFO: checking yasm version... 
+DEBUG: Executing111: `c:/mozilla-build/bin/yasm.EXE --version`
+INFO: 1.3.0
+INFO: checking for the target C compiler... 
+DEBUG: _cc: Trying 'c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe'
+INFO: 'c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_~1/cl.exe'
+INFO: checking whether the target C compiler can be used... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.65tqkr.c` with content:
+DEBUG: | #if defined(_MSC_VER)
+DEBUG: | #if defined(__clang__)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #else
+DEBUG: | %COMPILER "msvc"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #endif
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | #  if !__cplusplus || __has_feature(cxx_alignof)
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #elif __STDC__
+DEBUG: | %STDC_VERSION 198900L
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #endif
+DEBUG: | #if __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #endif
+DEBUG: | #if _MSC_VER || __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing111: `'c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_~1/cl.exe' -E 'c:\users\trades~1\appdata\local\temp\conftest.65tqkr.c'`
+DEBUG: COMPILER = msvc
+DEBUG: VERSION = 190024215
+DEBUG: CPU = arm
+DEBUG: KERNEL = WINNT
+DEBUG: ENDIANNESS = little
+INFO: yes
+INFO: checking the target C compiler version... 
+INFO: 19.00.24215
+INFO: checking the target C compiler works... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.lygw_n.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing111: `cl.exe -c 'c:\users\trades~1\appdata\local\temp\conftest.lygw_n.c'`
+INFO: yes
+INFO: checking for the target C++ compiler... 
+DEBUG: _cxx: Trying 'c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe'
+INFO: 'c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_~1/cl.exe'
+INFO: checking whether the target C++ compiler can be used... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.blmw5p.cpp` with content:
+DEBUG: | #if defined(_MSC_VER)
+DEBUG: | #if defined(__clang__)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #else
+DEBUG: | %COMPILER "msvc"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #endif
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | #  if !__cplusplus || __has_feature(cxx_alignof)
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #elif __STDC__
+DEBUG: | %STDC_VERSION 198900L
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #endif
+DEBUG: | #if __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #endif
+DEBUG: | #if _MSC_VER || __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing111: `'c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_~1/cl.exe' -E 'c:\users\trades~1\appdata\local\temp\conftest.blmw5p.cpp'`
+DEBUG: COMPILER = msvc
+DEBUG: VERSION = 190024215
+DEBUG: cplusplus = 199711L
+DEBUG: CPU = arm
+DEBUG: KERNEL = WINNT
+DEBUG: ENDIANNESS = little
+INFO: yes
+INFO: checking the target C++ compiler version... 
+INFO: 19.00.24215
+INFO: checking the target C++ compiler works... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.nc4rp_.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing111: `cl.exe -c 'c:\users\trades~1\appdata\local\temp\conftest.nc4rp_.cpp'`
+INFO: yes
+INFO: checking for the host C compiler... 
+DEBUG: _host_cc: Trying 'c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64/cl.exe'
+INFO: 'c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64/cl.exe'
+INFO: checking whether the host C compiler can be used... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.5wayks.c` with content:
+DEBUG: | #if defined(_MSC_VER)
+DEBUG: | #if defined(__clang__)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #else
+DEBUG: | %COMPILER "msvc"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #endif
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | #  if !__cplusplus || __has_feature(cxx_alignof)
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #elif __STDC__
+DEBUG: | %STDC_VERSION 198900L
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #endif
+DEBUG: | #if __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #endif
+DEBUG: | #if _MSC_VER || __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing111: `'c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64/cl.exe' -E 'c:\users\trades~1\appdata\local\temp\conftest.5wayks.c'`
+DEBUG: COMPILER = msvc
+DEBUG: VERSION = 190024215
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = WINNT
+DEBUG: ENDIANNESS = little
+INFO: yes
+INFO: checking the host C compiler version... 
+INFO: 19.00.24215
+INFO: checking the host C compiler works... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.yk4zmj.c` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing111: `cl.exe -c 'c:\users\trades~1\appdata\local\temp\conftest.yk4zmj.c'`
+INFO: yes
+INFO: checking for the host C++ compiler... 
+DEBUG: _host_cxx: Trying 'c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64/cl.exe'
+INFO: 'c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64/cl.exe'
+INFO: checking whether the host C++ compiler can be used... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.augzju.cpp` with content:
+DEBUG: | #if defined(_MSC_VER)
+DEBUG: | #if defined(__clang__)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #else
+DEBUG: | %COMPILER "msvc"
+DEBUG: | %VERSION _MSC_FULL_VER
+DEBUG: | #endif
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | #  if !__cplusplus || __has_feature(cxx_alignof)
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #elif __STDC__
+DEBUG: | %STDC_VERSION 198900L
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #endif
+DEBUG: | #if __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #endif
+DEBUG: | #if _MSC_VER || __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing111: `'c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64/cl.exe' -E 'c:\users\trades~1\appdata\local\temp\conftest.augzju.cpp'`
+DEBUG: COMPILER = msvc
+DEBUG: VERSION = 190024215
+DEBUG: cplusplus = 199711L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = WINNT
+DEBUG: ENDIANNESS = little
+INFO: yes
+INFO: checking the host C++ compiler version... 
+INFO: 19.00.24215
+INFO: checking the host C++ compiler works... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.b2rdmn.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing111: `cl.exe -c 'c:\users\trades~1\appdata\local\temp\conftest.b2rdmn.cpp'`
+INFO: yes
+INFO: checking for 64-bit OS... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.qitwbx.cpp` with content:
+DEBUG: | 
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | static_assert(sizeof(void *) == 8, "")
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing111: `cl.exe -c 'c:\users\trades~1\appdata\local\temp\conftest.qitwbx.cpp'`
+DEBUG: The command returned non-zero exit status 2.
+DEBUG: Its output was:
+DEBUG: | conftest.qitwbx.cpp
+DEBUG: | c:\users\trades~1\appdata\local\temp\conftest.qitwbx.cpp(5): error C2338: 
+DEBUG: Its error output was:
+DEBUG: | Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for ARM
+DEBUG: | Copyright (C) Microsoft Corporation.  All rights reserved.
+DEBUG: | 
+INFO: no
+INFO: checking for Windows SDK... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.ov5lnh.c` with content:
+DEBUG: | #include <winsdkver.h>
+DEBUG: | WINVER_MAXVER
+DEBUG: Executing111: `cl.exe -I 'C:/Program Files (x86)/Windows Kits/10/include/10.0.14393.0/um' -I 'C:/Program Files (x86)/Windows Kits/10/include/10.0.14393.0/shared' -E 'c:\users\trades~1\appdata\local\temp\conftest.ov5lnh.c'`
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.5b3sq7.c` with content:
+DEBUG: | #include <winsdkver.h>
+DEBUG: | WINVER_MAXVER
+DEBUG: Executing111: `cl.exe -I 'C:/Program Files (x86)/Windows Kits/8.1/include/um' -I 'C:/Program Files (x86)/Windows Kits/8.1/include/shared' -E 'c:\users\trades~1\appdata\local\temp\conftest.5b3sq7.c'`
+INFO: 0x0a00 in 'C:\Program Files (x86)\Windows Kits\10\'
+INFO: checking for Universal CRT SDK... 
+INFO: 10.0.14393.0 in 'C:\Program Files (x86)\Windows Kits\10\'
+INFO: checking for the Debug Interface Access SDK... 
+INFO: c:/PROGRA~2/MICROS~1.0/DIA SDK
+INFO: checking for mt... 
+DEBUG: mt: Trying mt.exe
+INFO: 'C:/PROGRA~2/WI3CF2~1/10/bin/x64/mt.exe'
+INFO: checking whether MT is really Microsoft Manifest Tool... 
+INFO: yes
+INFO: checking for link... 
+DEBUG: link: Trying link.exe
+INFO: 'C:/PROGRA~2/MICROS~1.0/VC/bin/amd64/link.exe'
+INFO: checking for stdint.h... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.npegxq.cpp` with content:
+DEBUG: | #include <stdint.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing111: `cl.exe -c 'c:\users\trades~1\appdata\local\temp\conftest.npegxq.cpp'`
+INFO: yes
+INFO: checking for inttypes.h... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.utzt83.cpp` with content:
+DEBUG: | #include <inttypes.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing111: `cl.exe -c 'c:\users\trades~1\appdata\local\temp\conftest.utzt83.cpp'`
+INFO: yes
+INFO: checking for malloc.h... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.vt1ttu.cpp` with content:
+DEBUG: | #include <malloc.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing111: `cl.exe -c 'c:\users\trades~1\appdata\local\temp\conftest.vt1ttu.cpp'`
+INFO: yes
+INFO: checking for alloca.h... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.jlcbka.cpp` with content:
+DEBUG: | #include <alloca.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing111: `cl.exe -c 'c:\users\trades~1\appdata\local\temp\conftest.jlcbka.cpp'`
+DEBUG: The command returned non-zero exit status 2.
+DEBUG: Its output was:
+DEBUG: | conftest.jlcbka.cpp
+DEBUG: | c:\users\trades~1\appdata\local\temp\conftest.jlcbka.cpp(1): fatal error C1083: Cannot open include file: 'alloca.h': No such file or directory
+DEBUG: Its error output was:
+DEBUG: | Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for ARM
+DEBUG: | Copyright (C) Microsoft Corporation.  All rights reserved.
+DEBUG: | 
+INFO: no
+INFO: checking for perf_event_open system call... 
+DEBUG: Creating `c:\users\trades~1\appdata\local\temp\conftest.9womcu.cpp` with content:
+DEBUG: | #include <asm/unistd.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | return sizeof(__NR_perf_event_open);
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing111: `cl.exe -c 'c:\users\trades~1\appdata\local\temp\conftest.9womcu.cpp'`
+DEBUG: The command returned non-zero exit status 2.
+DEBUG: Its output was:
+DEBUG: | conftest.9womcu.cpp
+DEBUG: | c:\users\trades~1\appdata\local\temp\conftest.9womcu.cpp(1): fatal error C1083: Cannot open include file: 'asm/unistd.h': No such file or directory
+DEBUG: Its error output was:
+DEBUG: | Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for ARM
+DEBUG: | Copyright (C) Microsoft Corporation.  All rights reserved.
+DEBUG: | 
+INFO: no
+INFO: checking for tar... 
+DEBUG: tar: Trying gnutar
+DEBUG: tar: Trying gtar
+DEBUG: tar: Trying tar
+INFO: C:/mozilla-build/msys/bin/tar.EXE
+INFO: checking for unzip... 
+DEBUG: unzip: Trying unzip
+INFO: c:/mozilla-build/bin/unzip.EXE
+INFO: checking for zip... 
+DEBUG: zip: Trying zip
+INFO: c:/mozilla-build/bin/zip.EXE
+INFO: checking for the Mozilla API key... 
+INFO: no
+INFO: checking for the Google API key... 
+INFO: no
+INFO: checking for the Bing API key... 
+INFO: no
+INFO: checking for the Adjust SDK key... 
+INFO: no
+INFO: checking for awk... 
+DEBUG: awk: Trying gawk
+INFO: C:/mozilla-build/msys/bin/gawk.EXE
+INFO: checking for perl... 
+DEBUG: perl: Trying perl5
+DEBUG: perl: Trying perl
+INFO: C:/mozilla-build/msys/bin/perl.EXE
+INFO: checking for minimum required perl version >= 5.006... 
+DEBUG: Executing111: `C:/mozilla-build/msys/bin/perl.EXE -e 'print $]'`
+INFO: 5.008008
+INFO: checking for full perl installation... 
+INFO: yes
+INFO: checking for gmake... 
+DEBUG: gmake: Trying mingw32-make
+DEBUG: gmake: Trying c:/mozilla-build/bin/mozmake.EXE
+INFO: c:/mozilla-build/bin/mozmake.EXE
+INFO: checking for doxygen... 
+DEBUG: doxygen: Trying doxygen
+INFO: not found
+INFO: checking for xargs... 
+DEBUG: xargs: Trying xargs
+INFO: C:/mozilla-build/msys/bin/xargs.EXE
+INFO: checking for makensisu... 
+DEBUG: makensisu: Trying makensis-3.01.exe
+INFO: c:/mozilla-build/nsis-3.01/makensis-3.01.exe
+INFO: checking for NSIS version... 
+DEBUG: Executing111: `c:/mozilla-build/nsis-3.01/makensis-3.01.exe -version`
+INFO: 3.01
+INFO: checking for 32-bit NSIS... 
+INFO: yes
+INFO: checking for autoconf... 
+INFO: C:/mozilla-build/msys/local/bin/autoconf-2.13
+INFO: brigs3 c:/mozilla-source/mozilla-esr52/old-configure
+DEBUG: Injecting the following to old-configure:
+DEBUG: | export AUTOCONF=C:/mozilla-build/msys/local/bin/autoconf-2.13
+DEBUG: | PYTHON=c:/mozilla-source/mozilla-esr52/obj-arm-windows-mingw32/_virtualenv/Scripts/python.exe
+DEBUG: | CROSS_COMPILE=1
+DEBUG: | OS_TARGET=WINNT
+DEBUG: | OS_ARCH=WINNT
+DEBUG: | OS_TEST=arm
+DEBUG: | CPU_ARCH=arm
+DEBUG: | HOST_OS_ARCH=WINNT
+DEBUG: | MOZ_BUILD_APP=browser
+DEBUG: | RELEASE_OR_BETA=1
+DEBUG: | MOZ_UPDATE_CHANNEL=default
+DEBUG: | COMPILE_ENVIRONMENT=1
+DEBUG: | MOZ_DEBUG=1
+DEBUG: | MOZ_PGO=
+DEBUG: | _YASM_MAJOR_VERSION=1
+DEBUG: | _YASM_MINOR_VERSION=3
+DEBUG: injetando assignment `CC=cl.exe`
+DEBUG: | CC=c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe
+DEBUG: | CC_TYPE=msvc
+DEBUG: | CC_VERSION=19.00.24215
+DEBUG: | CPP='cl.exe -E'
+DEBUG: injetando assignment `CXX=cl.exe`
+DEBUG: | CXX=c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe
+DEBUG: | CXXCPP='cl.exe -E'
+DEBUG: injetando assignment `HOST_CC=cl.exe`
+DEBUG: | HOST_CC=c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64/cl.exe
+DEBUG: | HOST_CC_TYPE=msvc
+DEBUG: | HOST_CC_VERSION=19.00.24215
+DEBUG: injetando assignment `HOST_CXX=cl.exe`
+DEBUG: | HOST_CXX=c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64/cl.exe
+DEBUG: | MOZ_DEBUG_FLAGS=-Zi
+DEBUG: | WINDOWSSDKDIR='C:\Program Files (x86)\Windows Kits\10\'
+DEBUG: | MOZ_WINSDK_MAXVER=0x0A000000
+DEBUG: | LD='C:/PROGRA~2/MICROS~1.0/VC/bin/amd64/link.exe'
+DEBUG: | MOZ_MEMORY=1
+DEBUG: | HAVE_MALLOC_H=1
+DEBUG: | MOZ_ENABLE_WARNINGS_AS_ERRORS=
+DEBUG: | _WARNINGS_CFLAGS=''
+DEBUG: | _WARNINGS_CXXFLAGS=''
+DEBUG: | BUILD_CTYPES=1
+DEBUG: | MOZ_WIDGET_TOOLKIT=windows
+DEBUG: | MOZ_FMP4=1
+DEBUG: | MOZ_SERVICES_HEALTHREPORT=1
+DEBUG: | MOZ_MOZILLA_API_KEY=no-mozilla-api-key
+DEBUG: | MOZ_GOOGLE_API_KEY=no-google-api-key
+DEBUG: | MOZ_ADJUST_SDK_KEY=no-adjust-sdk-key
+DEBUG: | MOZ_WEBSPEECH=1
+DEBUG: | _NON_GLOBAL_ACDEFINES='NECKO_PROTOCOL_about NECKO_PROTOCOL_data NECKO_PROTOCOL_device NECKO_PROTOCOL_file NECKO_PROTOCOL_ftp NECKO_PROTOCOL_http NECKO_PROTOCOL_res NECKO_PROTOCOL_viewsource NECKO_PROTOCOL_websocket NECKO_PROTOCOL_wyciwyg'
+DEBUG: | NECKO_PROTOCOLS='about data device file ftp http res viewsource websocket wyciwyg'
+DEBUG: | AWK=C:/mozilla-build/msys/bin/gawk.EXE
+DEBUG: | PERL=C:/mozilla-build/msys/bin/perl.EXE
+DEBUG: Running C:/mozilla-build/msys/bin/sh.exe c:/mozilla-source/mozilla-esr52/old-configure --disable-optimize --without-intl-api --host=x86_64-pc-mingw32 --target=arm-windows-mingw32 --enable-tests --enable-debug --without-toolchain-prefix --enable-debug-symbols --enable-jemalloc --without-linux-headers --disable-warnings-as-errors --disable-js-shell --enable-sm-promise --disable-shared-js --disable-export-js --disable-instruments --disable-callgrind --disable-profiling --disable-vtune --disable-gc-trace --disable-perf --disable-more-deterministic --enable-ctypes --without-system-ffi
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:903: checking host system type
+configure:924: checking target system type
+configure:942: checking build system type
+configure:1474: checking for ranlib
+configure:1509: checking for ar
+configure:1549: checking for gcc
+configure:1662: checking whether the C compiler (c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe  ) works
+configure:1678: c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe -o conftest    conftest.c  1>&5
+Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for ARM
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+conftest.c
+Microsoft (R) Incremental Linker Version 14.00.24215.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:conftest.exe 
+/machine:arm 
+/out:conftest.exe 
+conftest.obj 
+configure:1704: checking whether the C compiler (c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe  ) is a cross-compiler
+configure:1709: checking whether we are using GNU C
+configure:1737: checking whether c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe accepts -g
+configure:1773: checking for c++
+configure:1805: checking whether the C++ compiler (cl.exe  ) works
+configure:1821: cl.exe -o conftest    conftest.C  1>&5
+Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for ARM
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+conftest.C
+Microsoft (R) Incremental Linker Version 14.00.24215.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:conftest.exe 
+/machine:arm 
+/out:conftest.exe 
+conftest.obj 
+configure:1847: checking whether the C++ compiler (cl.exe  ) is a cross-compiler
+configure:1852: checking whether we are using GNU C++
+configure:1880: checking whether cl.exe accepts -g
+configure:1917: checking for ranlib
+configure:1952: checking for ar
+configure:1987: checking for as
+configure:2022: checking for ld
+configure:2057: checking for lipo
+configure:2092: checking for strip
+configure:2127: checking for windres
+configure:2162: checking for otool
+configure:2197: checking for objcopy
+configure:2935: checking for midl
+configure:2984: c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe -c  -TC -nologo  conftest.c 1>&5
+conftest.c
+configure:3009: cl.exe -c  -TP -nologo  conftest.C 1>&5
+conftest.C
+configure:3063: checking for dia2.h
+configure:3180: checking for overridable _RAISE
+configure:3542: checking for X
+configure:4532: c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe -c   conftest.c 1>&5
+Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for ARM
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+conftest.c
+configure(4528): error C2065: '__thumb2__': undeclared identifier
+configure: failed program was:
+#line 4525 "configure"
+#include "confdefs.h"
+
+int main() {
+return sizeof(__thumb2__);
+; return 0; }
+configure:4674: checking for ARM SIMD support in compiler
+configure:4685: c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe -o conftest  -TC -nologo -wd4091 -D_HAS_EXCEPTIONS=0   conftest.c  1>&5
+cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+conftest.c
+conftest.obj : error LNK2019: unresolved external symbol asm referenced in function main
+conftest.exe : fatal error LNK1120: 1 unresolved externals
+configure: failed program was:
+#line 4678 "configure"
+#include "confdefs.h"
+
+int main() {
+asm("uqadd8 r1, r1, r2");
+; return 0; }
+configure:4708: checking ARM version support in compiler
+configure:4713: checking for ARM NEON support in compiler
+configure:4724: c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe -o conftest  -TC -nologo -wd4091 -D_HAS_EXCEPTIONS=0   conftest.c  1>&5
+cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+conftest.c
+conftest.obj : error LNK2019: unresolved external symbol asm referenced in function main
+conftest.exe : fatal error LNK1120: 1 unresolved externals
+configure: failed program was:
+#line 4717 "configure"
+#include "confdefs.h"
+
+int main() {
+asm(".fpu neon\n vadd.i8 d0, d0, d0");
+; return 0; }
+configure:5205: c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe -o conftest  -TC -nologo -wd4091 -D_HAS_EXCEPTIONS=0   conftest.c  1>&5
+cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+conftest.c
+configure:6323: checking for valid debug flags
+configure:6334: c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe -c  -TC -nologo -wd4091 -D_HAS_EXCEPTIONS=0 -W3 -Gy -Zc:inline -utf-8 -FS -Gw -wd4244 -wd4267 -we4553 -Zi  conftest.c 1>&5
+conftest.c
+configure:9618: checking for malloc.h
+configure:9666: checking for strndup
+configure:9666: checking for posix_memalign
+configure:9666: checking for memalign
+configure:9729: checking for malloc_usable_size
+configure:9791: checking whether malloc_usable_size definition can use const argument
+configure:9802: c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe -c  -TC -nologo -wd4091 -D_HAS_EXCEPTIONS=0 -W3 -Gy -Zc:inline -utf-8 -FS -Gw -wd4244 -wd4267 -we4553  conftest.c 1>&5
+conftest.c
+configure:9824: checking for valloc in malloc.h
+Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for ARM
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+conftest.c
+configure:9849: checking for valloc in unistd.h
+Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for ARM
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+conftest.c
+configure(9852): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+configure:10004: checking NSPR selection
+configure:11139: checking if app-specific confvars.sh exists
+configure:13817: c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe -c  -TC -nologo -wd4091 -D_HAS_EXCEPTIONS=0 -W3 -Gy -Zc:inline -utf-8 -FS -Gw -wd4244 -wd4267 -we4553  conftest.c 1>&5
+conftest.c
+configure(13811): fatal error C1083: Cannot open include file: 'linux/ethtool.h': No such file or directory
+configure: failed program was:
+#line 13810 "configure"
+#include "confdefs.h"
+#include <linux/ethtool.h>
+int main() {
+ struct ethtool_cmd cmd; cmd.speed_hi = 0; 
+; return 0; }
+configure:15457: checking for wget
+configure:17507: checking what kind of list files are supported by the linker
+configure:17512: c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe -o conftest.obj -c  -TC -nologo -wd4091 -D_HAS_EXCEPTIONS=0 -W3 -Gy -Zc:inline -utf-8 -FS -Gw -wd4244 -wd4267 -we4553  conftest.c 1>&5
+cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+conftest.c
+configure:17514: c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe -o conftest  -LARGEADDRESSAWARE -NXCOMPAT -DYNAMICBASE conftest.list  kernel32.lib user32.lib gdi32.lib winmm.lib wsock32.lib advapi32.lib secur32.lib 1>&5
+Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for ARM
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+cl : Command line warning D9002 : ignoring unknown option '-LARGEADDRESSAWARE'
+cl : Command line warning D9002 : ignoring unknown option '-NXCOMPAT'
+cl : Command line warning D9024 : unrecognized source file type 'conftest.list', object file assumed
+Microsoft (R) Incremental Linker Version 14.00.24215.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:conftest.exe 
+/machine:arm 
+/out:conftest.exe 
+conftest.list 
+kernel32.lib 
+user32.lib 
+gdi32.lib 
+winmm.lib 
+wsock32.lib 
+advapi32.lib 
+secur32.lib 
+conftest.list : fatal error LNK1107: invalid or corrupt file: cannot read at 0x14
+configure:17518: c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe -o conftest  -LARGEADDRESSAWARE -NXCOMPAT -DYNAMICBASE -Wl,-filelist,conftest.list  kernel32.lib user32.lib gdi32.lib winmm.lib wsock32.lib advapi32.lib secur32.lib 1>&5
+Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for ARM
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+cl : Command line error D8021 : invalid numeric argument '/Wl,-filelist,conftest.list'
+configure:17520: c:/PROGRA~2/MICROS~1.0/VC/bin/AMD64_arm/cl.exe -o conftest  -LARGEADDRESSAWARE -NXCOMPAT -DYNAMICBASE @conftest.list  kernel32.lib user32.lib gdi32.lib winmm.lib wsock32.lib advapi32.lib secur32.lib 1>&5
+Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for ARM
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9035 : option 'o' has been deprecated and will be removed in a future release
+cl conftest.obj
+
+cl : Command line warning D9002 : ignoring unknown option '-LARGEADDRESSAWARE'
+cl : Command line warning D9002 : ignoring unknown option '-NXCOMPAT'
+Microsoft (R) Incremental Linker Version 14.00.24215.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:conftest.exe 
+/machine:arm 
+/out:conftest.exe 
+conftest.obj 
+kernel32.lib 
+user32.lib 
+gdi32.lib 
+winmm.lib 
+wsock32.lib 
+advapi32.lib 
+secur32.lib 
+configure:18028: checking for d3d9.h
+configure:18065: checking for d3d10.h
+configure:19134: checking for posix_fadvise
+configure:19134: checking for posix_fallocate
