@@ -1,0 +1,134 @@
+$ mach configure
+ 0:01.01 Clobber not needed.
+ 0:01.01 Adding make options from c:\mozilla-central\mozconfig
+    CONFIG_GUESS=aarch64-windows-mingw32
+    MOZ_OBJDIR=c:/mozilla-central/obj-aarch64-windows-mingw32
+    OBJDIR=c:/mozilla-central/obj-aarch64-windows-mingw32
+    FOUND_MOZCONFIG=c:/mozilla-central/mozconfig
+    export FOUND_MOZCONFIG
+ 0:01.09 c:\mozilla-build\bin\mozmake.EXE -f client.mk -s configure
+ 0:01.20 cd c:/mozilla-central/obj-aarch64-windows-mingw32
+ 0:01.23 c:/mozilla-central/configure
+ 0:02.12 Reexecuting in the virtualenv
+ 0:02.76 Adding configure options from c:\mozilla-central\mozconfig
+ 0:02.76   --host=x86_64-pc-mingw32
+ 0:02.76   --target=aarch64-windows-mingw32
+ 0:02.76   LDFLAGS=-LIBPATH:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\ATLMFC\lib\ARM64:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\lib\ARM64:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\lib\x86\store\references:C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.17134.0:C:\Program Files (x86)\Windows Kits\10\References\10.0.17134.0:C:\Windows\Microsoft.NET\Framework\v4.0.30319
+ 0:02.76   CC=c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/14.15.26629/bin/Hostx64/arm64/cl.exe
+ 0:02.76   RUSTC=d:/mozilla-source/rust/build/x86_64-pc-windows-msvc/stage2/bin/rustc.exe
+ 0:02.76   CXXFLAGS=-I C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\ATLMFC\include:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\include:C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt
+ 0:02.76   CXX=c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/14.15.26629/bin/Hostx64/arm64/cl.exe
+ 0:02.76   CFLAGS=-I C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\ATLMFC\include:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\include:C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt
+ 0:02.76   HOST_CC=c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/14.15.26629/bin/Hostx64/x86/cl.exe
+ 0:02.76   HOST_CXX=c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/14.15.26629/bin/Hostx64/x86/cl.exe
+ 0:02.76 checking for vcs source checkout... no
+ 0:02.96 checking for a shell... C:/mozilla-build/msys/bin/sh.exe
+ 0:03.50 checking for host system type... x86_64-pc-mingw32
+ 0:04.01 checking for target system type... aarch64-windows-mingw32
+ 0:04.06 checking for a shell... C:/mozilla-build/msys/bin/sh.exe
+ 0:04.56 checking for host system type... x86_64-pc-mingw32
+ 0:05.06 checking for target system type... aarch64-windows-mingw32
+ 0:05.13 checking for vcs source checkout... no
+ 0:05.13 checking whether cross compiling... yes
+ 0:05.13 checking for the target C compiler... 'c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/1415~1.266/bin/Hostx64/arm64/cl.exe'
+ 0:05.37 checking whether the target C compiler can be used... yes
+ 0:05.43 checking for Python 3... C:/mozilla-build//python3/python3.exe (3.6.5)
+ 0:05.46 checking for pkg_config... not found
+ 0:05.46 checking for yasm... c:/mozilla-build/bin/yasm.exe
+ 0:05.48 checking yasm version... 1.3.0
+ 0:05.48 checking the target C compiler version... 19.15.26629
+ 0:05.57 checking the target C compiler works... yes
+ 0:05.57 checking for the target C++ compiler... 'c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/1415~1.266/bin/Hostx64/arm64/cl.exe'
+ 0:05.63 checking whether the target C++ compiler can be used... yes
+ 0:05.63 checking the target C++ compiler version... 19.15.26629
+ 0:05.71 checking the target C++ compiler works... yes
+ 0:05.71 checking for the host C compiler... 'c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/1415~1.266/bin/Hostx64/x86/cl.exe'
+ 0:05.78 checking whether the host C compiler can be used... yes
+ 0:05.78 checking the host C compiler version... 19.15.26629
+ 0:05.85 checking the host C compiler works... yes
+ 0:05.85 checking for the host C++ compiler... 'c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/1415~1.266/bin/Hostx64/x86/cl.exe'
+ 0:05.90 checking whether the host C++ compiler can be used... yes
+ 0:05.90 checking the host C++ compiler version... 19.15.26629
+ 0:06.00 checking the host C++ compiler works... yes
+ 0:06.07 checking for 64-bit OS... yes
+ 0:06.07 checking bindgen cflags... no
+ 0:06.20 checking for Windows SDK... 0x0a00 in 'C:\Program Files (x86)\Windows Kits\10\'
+ 0:06.21 checking for Universal CRT SDK... 10.0.17134.0 in 'C:\Program Files (x86)\Windows Kits\10\'
+ 0:06.21 checking for the Debug Interface Access SDK... c:\PROGRA~2\MICROS~1\Preview\COMMUN~1\DIA SDK
+ 0:06.21 checking for mt... 'C:/PROGRA~2/WI3CF2~1/10/bin/100171~1.0/x64/mt.exe'
+ 0:06.24 checking whether MT is really Microsoft Manifest Tool... yes
+ 0:06.26 checking for linker... 'c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/1415~1.266/bin/Hostx64/arm64/link.exe'
+ 0:06.28 checking for makecab... c:/WINDOWS/System32/makecab.exe
+ 0:06.28 checking for fxc... 'C:/PROGRA~2/WI3CF2~1/10/bin/100171~1.0/x64/fxc.exe'
+ 0:06.35 checking whether the C compiler supports -fsanitize=fuzzer-no-link... yes
+ 0:06.46 checking for stdint.h... yes
+ 0:06.59 checking for inttypes.h... yes
+ 0:06.71 checking for malloc.h... yes
+ 0:06.81 checking for alloca.h... no
+ 0:06.87 checking for perf_event_open system call... no
+ 0:06.90 checking for rustc... d:/mozilla-source/rust/build/x86_64-pc-windows-msvc/stage2/bin/rustc.exe
+ 0:06.90 checking for cargo... c:/Users/Tradeshow1/.cargo/bin/cargo.exe
+ 0:06.93 checking rustc version... 1.29.0-dev
+ 0:06.99 checking cargo version... 1.27.0
+ 0:08.25 checking for rustdoc... c:/Users/Tradeshow1/.cargo/bin/rustdoc.exe
+ 0:08.25 checking for rustfmt... c:/Users/Tradeshow1/.cargo/bin/rustfmt.exe
+ 0:08.27 checking for nodejs... c:/mozilla-build/node-v8.11.1-win-x64/node.exe
+ 0:08.31 checking for node.js version... 8.11.1
+ 0:08.31
+ 0:08.34 checking for tar... C:/mozilla-build/msys/bin/tar.exe
+ 0:08.34 checking for unzip... c:/mozilla-build/bin/unzip.exe
+ 0:08.34 checking for zip... c:/mozilla-build/bin/zip.exe
+ 0:08.36 checking for gn... not found
+ 0:08.36 checking for the Mozilla API key... no
+ 0:08.36 checking for the Google API key... no
+ 0:08.36 checking for the Bing API key... no
+ 0:08.36 checking for the Adjust SDK key... no
+ 0:08.36 checking for the Leanplum SDK key... no
+ 0:08.36 checking for the Pocket API key... no
+ 0:08.52 checking for llvm-config... c:/Users/Tradeshow1/.mozbuild/clang/bin/llvm-config.exe
+ 0:08.58 checking for awk... C:/mozilla-build/msys/bin/gawk.exe
+ 0:08.59 checking for perl... C:/mozilla-build/msys/bin/perl.exe
+ 0:08.64 checking for minimum required perl version >= 5.006... 5.008008
+ 0:08.67 checking for full perl installation... yes
+ 0:08.67 checking for gmake... c:/mozilla-build/bin/mozmake.EXE
+ 0:08.70 checking for watchman... c:/mozilla-build/bin/watchman.exe
+ 0:08.70 checking for watchman version... 4.9.1
+ 0:08.70 checking for xargs... C:/mozilla-build/msys/bin/xargs.exe
+ 0:08.72 checking for makensisu... c:/mozilla-build/nsis-3.01/makensis-3.01.exe
+ 0:08.77 checking for NSIS version... 3.01
+ 0:08.77 checking for 32-bit NSIS... yes
+ 0:08.77 checking for 7z... c:/mozilla-build/bin/7z.exe
+ 0:08.77 checking for autoconf... C:/mozilla-build/msys/local/bin/autoconf-2.13
+ 0:20.73 loading cache ./config.cache
+ 0:22.19 checking host system type... x86_64-pc-mingw32
+ 0:23.03 checking target system type... aarch64-windows-mingw32
+ 0:23.85 checking build system type... x86_64-pc-mingw32
+ 0:24.01 cross compiling from x86_64-pc-mingw32 to aarch64-windows-mingw32
+ 0:24.04 checking for ranlib... no
+ 0:24.05 checking for ar... no
+ 0:24.08 checking for gcc... 'c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/1415~1.266/bin/Hostx64/arm64/cl.exe'
+ 0:24.30 checking whether the C compiler ('c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/1415~1.266/bin/Hostx64/arm64/cl.exe' -I C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\ATLMFC\include:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\include:C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt -LIBPATH:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\ATLMFC\lib\ARM64:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\lib\ARM64:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\lib\x86\store\references:C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.17134.0:C:\Program Files (x86)\Windows Kits\10\References\10.0.17134.0:C:\Windows\Microsoft.NET\Framework\v4.0.30319 ) works... no
+ 0:24.30 configure: error: installation or configuration problem: C compiler cannot create executables.
+ 0:24.32 DEBUG: This file contains any messages produced by compilers while
+ 0:24.32 DEBUG: running configure, to aid debugging if configure makes a mistake.
+ 0:24.32 DEBUG:
+ 0:24.32 DEBUG: configure:833: checking host system type
+ 0:24.32 DEBUG: configure:854: checking target system type
+ 0:24.32 DEBUG: configure:872: checking build system type
+ 0:24.32 DEBUG: configure:1295: checking for ranlib
+ 0:24.32 DEBUG: configure:1330: checking for ar
+ 0:24.32 DEBUG: configure:1370: checking for gcc
+ 0:24.32 DEBUG: configure:1483: checking whether the C compiler ('c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/1415~1.266/bin/Hostx64/arm64/cl.exe' -I C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\ATLMFC\include:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\include:C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt -LIBPATH:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\ATLMFC\lib\ARM64:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\lib\ARM64:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\lib\x86\store\references:C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.17134.0:C:\Program Files (x86)\Windows Kits\10\References\10.0.17134.0:C:\Windows\Microsoft.NET\Framework\v4.0.30319 ) works
+ 0:24.32 DEBUG: configure:1499: 'c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/1415~1.266/bin/Hostx64/arm64/cl.exe' -o conftest -I C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\ATLMFC\include:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\include:C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt  -LIBPATH:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\ATLMFC\lib\ARM64:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\lib\ARM64:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\lib\x86\store\references:C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.17134.0:C:\Program Files (x86)\Windows Kits\10\References\10.0.17134.0:C:\Windows\Microsoft.NET\Framework\v4.0.30319  conftest.c  1>&5
+ 0:24.32 DEBUG: c:/mozilla-central/old-configure: line 1498: 'c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/1415~1.266/bin/Hostx64/arm64/cl.exe': No such file or directory
+ 0:24.32 DEBUG: configure: failed program was:
+ 0:24.32 DEBUG:
+ 0:24.32 DEBUG: #line 1494 "configure"
+ 0:24.32 DEBUG: #include "confdefs.h"
+ 0:24.32 DEBUG:
+ 0:24.32 DEBUG: main(){return(0);}
+ 0:24.32 DEBUG: configure: error: installation or configuration problem: C compiler cannot create executables.
+ 0:24.32 ERROR: old-configure failed
+ 0:24.38 *** Fix above errors and then restart with\
+ 0:24.38                "c:/mozilla-build/bin/mozmake.EXE -f client.mk build"
+ 0:24.40 mozmake.EXE: *** [client.mk:127: configure] Error 1

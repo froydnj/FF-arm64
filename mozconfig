@@ -1,0 +1,30 @@
+ac_add_options --host=x86_64-pc-mingw32
+
+ac_add_options --target=aarch64-windows-mingw32
+#ac_add_options  --enable-debug
+#ac_add_options  --disable-optimize
+#ac_add_options  --without-intl-api
+
+export RUSTC="d:/mozilla-source/rust/build/x86_64-pc-windows-msvc/stage2/bin/rustc.exe"
+
+export CC="c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/14.15.26629/bin/Hostx64/arm64/cl.exe"
+export CXX="c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/14.15.26629/bin/Hostx64/arm64/cl.exe"
+
+export CXXFLAGS="-I C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\ATLMFC\include:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\include:C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"
+
+
+export CFLAGS="-I C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\ATLMFC\include:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\include:C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt:C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"
+
+
+export LDFLAGS="-LIBPATH:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\ATLMFC\lib\ARM64:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\lib\ARM64:C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\14.15.26629\lib\x86\store\references:C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.17134.0:C:\Program Files (x86)\Windows Kits\10\References\10.0.17134.0:C:\Windows\Microsoft.NET\Framework\v4.0.30319"
+
+export HOST_CC="c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/14.15.26629/bin/Hostx64/x86/cl.exe"
+export HOST_CXX="c:/PROGRA~2/MICROS~1/Preview/COMMUN~1/VC/Tools/MSVC/14.15.26629/bin/Hostx64/x86/cl.exe"
+
+
+
+
+
+
+
+
