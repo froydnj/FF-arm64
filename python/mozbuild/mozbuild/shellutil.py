@@ -26,7 +26,7 @@ UNQUOTED_TOKENS_RE = _tokens2re(
   whitespace=r'[\t\r\n ]+',
   quote=r'[\'"]',
   comment='#',
-  special=r'[<>&|`(){}$;\*\?]', #need to remove this in order to add paths without spaces i.e. "c:/PROGRA~2/MICROS~1.0/..."
+  special=r'[<>&|`(){}$;\*\?]', #need to remove this if we have paths in mozconfig that has 8.3 short paths like "c:/PROGRA~2/MICROS~1.0/..."
   backslashed=r'\\[^\\]',
 )
 
