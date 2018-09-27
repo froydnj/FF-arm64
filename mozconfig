@@ -1,28 +1,38 @@
 ac_add_options --host=x86_64-pc-mingw32
 ac_add_options --target=aarch64-windows-mingw32
 
+# XXX need to integrate aarch64 ctypes patches
+ac_add_options --disable-ctypes
+# XXX too many things going wrong
+ac_add_options --disable-webrtc
 
+# Custom built rust with
+# https://github.com/rust-lang/rust/pull/54529 (may be on nightly)
+# https://github.com/rust-lang/rust/pull/54576 (may be on nightly)
+export RUSTC="/c/rust/build/x86_64-pc-windows-msvc/stage2/bin/rustc.exe"
 
-export RUSTC="c:/rust/build/x86_64-pc-windows-msvc/stage2/bin/rustc.exe"
+# Up-to-date with aarch64 varargs fix
+export LLVM_CONFIG=/c/mozilla-central/clang/bin/llvm-config.exe
 
 export WINDOWSSDKDIR="/c/mozilla-central/WinSDKDir"
 export VC_PATH="/c/mozilla-central/VC_PATH"
 
 export CC="/c/mozilla-central/VCPrevArm/cl.exe"
 export CXX="/c/mozilla-central/VCPrevArm/cl.exe"
+# Requires full-path AS fix
+export AS="/c/mozilla-central/VCPrevArm/armasm64.exe"
 export HOST_CC="/c/mozilla-central/VCPrevx86/cl.exe"
 export HOST_CXX="/c/mozilla-central/VCPrevx86/cl.exe"
 
-
 export LINKER="/c/mozilla-central/LinkArm/link.exe"
-export HOST_LD="/c/mozilla-central/Linkx86/link.exe"
+export HOST_LINKER="/c/mozilla-central/Linkx86/link.exe"
 
+includes="-I /c/mozilla-central/INC1 -I /c/mozilla-central/INC2 -I /c/mozilla-central/INC3 -I /c/mozilla-central/INC4 -I /c/mozilla-central/INC5 -I /c/mozilla-central/INC6 -I /c/mozilla-central/INC7 -I /c/mozilla-central/INC8"
+export CXXFLAGS="$includes"
+export CFLAGS="$includes"
 
-export CXXFLAGS="-I /c/mozilla-central/INC1:/c/mozilla-central/INC2:/c/mozilla-central/INC3:/c/mozilla-central/INC4:/c/mozilla-central/INC5:/c/mozilla-central/INC6:/c/mozilla-central/INC7:/c/mozilla-central/INC8"
-export CFLAGS="-I /c/mozilla-central/INC1:/c/mozilla-central/INC2:/c/mozilla-central/INC3:/c/mozilla-central/INC4:/c/mozilla-central/INC5:/c/mozilla-central/INC6:/c/mozilla-central/INC7:/c/mozilla-central/INC8"
-
-export HOST_LDFLAGS="-LIBPATH:/c/mozilla-central/LIB1:/c/mozilla-central/LIB2:/c/mozilla-central/LIB3:/c/mozilla-central/LIB4"
-export LDFLAGS="-LIBPATH:/c/mozilla-central/LIB1:/c/mozilla-central/LIB2:/c/mozilla-central/LIB3:/c/mozilla-central/LIB4"
+export HOST_LDFLAGS="-LIBPATH:c:/mozilla-central/HOST_LIB1 -LIBPATH:c:/mozilla-central/HOST_LIB2 -LIBPATH:c:/mozilla-central/HOST_LIB3 -LIBPATH:c:/mozilla-central/HOST_LIB4"
+#export LDFLAGS="-LIBPATH:/c/mozilla-central/LIB1:/c/mozilla-central/LIB2:/c/mozilla-central/LIB3:/c/mozilla-central/LIB4"
 
 
 
