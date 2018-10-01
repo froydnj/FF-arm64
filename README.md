@@ -26,8 +26,7 @@
 
 4. You will need to apply aarch64-winapi.patch from this directory, then run:
 
-   - rm -f Cargo.lock
-   - cargo update -p gkrust
+   - cargo update -p winapi:0.3.6
    - ./mach vendor rust
 
    to vendor the necessary winapi changes, until https://github.com/retep998/winapi-rs/pull/677
