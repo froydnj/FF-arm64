@@ -1,0 +1,25 @@
+diff --git a/.cargo/config.in b/.cargo/config.in
+index 94742fe..036b96a 100644
+--- a/.cargo/config.in
++++ b/.cargo/config.in
+@@ -12,6 +12,11 @@ git = "https://github.com/servo/serde"
+ branch = "deserialize_from_enums8"
+ replace-with = "vendored-sources"
+ 
++[source."https://github.com/retep998/winapi-rs"]
++git = "https://github.com/froydnj/winapi-rs"
++branch = "aarch64"
++replace-with = "vendored-sources"
++
+ [source.vendored-sources]
+ directory = '@top_srcdir@/third_party/rust'
+ 
+diff --git a/Cargo.toml b/Cargo.toml
+index 536d156..f1556c0 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -61,3 +61,4 @@ codegen-units = 1
+ [patch.crates-io]
+ libudev-sys = { path = "dom/webauthn/libudev-sys" }
+ serde_derive = { git = "https://github.com/servo/serde", branch = "deserialize_from_enums8" }
++winapi = { git = https://github.com/froydnj/winapi-rs", branch = "aarch64" }
