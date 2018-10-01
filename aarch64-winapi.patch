@@ -22,4 +22,4 @@ index 536d156..f1556c0 100644
  [patch.crates-io]
  libudev-sys = { path = "dom/webauthn/libudev-sys" }
  serde_derive = { git = "https://github.com/servo/serde", branch = "deserialize_from_enums8" }
-+winapi = { git = https://github.com/froydnj/winapi-rs", branch = "aarch64" }
++winapi = { git = "https://github.com/froydnj/winapi-rs", branch = "aarch64" }
