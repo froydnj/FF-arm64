@@ -17,6 +17,8 @@ mklink /j LinkArm "C:\Program Files (x86)\Microsoft Visual Studio\Preview\Commun
 rd Linkx86
 mklink /j Linkx86 "C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\%moz_msvc_version%\bin\Hostx64\x64\"
 
+rd WinRedistDir
+mklink /j WinRedistDir "C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Redist\MSVC\14.15.26706\onecore\arm64\Microsoft.VC141.CRT"
 
 rd HOST_LIB1
 mklink /j HOST_LIB1 "C:\Program Files (x86)\Microsoft Visual Studio\Preview\Community\VC\Tools\MSVC\%moz_msvc_version%\ATLMFC\lib\x64"

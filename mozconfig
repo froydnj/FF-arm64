@@ -15,6 +15,8 @@ export LLVM_CONFIG=/c/mozilla-central/clang/bin/llvm-config.exe
 export WINDOWSSDKDIR="/c/mozilla-central/WinSDKDir"
 export VC_PATH="/c/mozilla-central/VC_PATH"
 
+export WIN32_REDIST_DIR="/c/mozilla-central/WinRedistDir"
+
 export CC="/c/mozilla-central/VCPrevArm/cl.exe"
 export CXX="/c/mozilla-central/VCPrevArm/cl.exe"
 # Requires full-path AS fix
