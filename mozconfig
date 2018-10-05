@@ -1,8 +1,6 @@
 ac_add_options --host=x86_64-pc-mingw32
 ac_add_options --target=aarch64-windows-mingw32
 
-# XXX need to integrate aarch64 ctypes patches
-ac_add_options --disable-ctypes
 # XXX too many things going wrong
 ac_add_options --disable-webrtc
 
