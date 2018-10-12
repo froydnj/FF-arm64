@@ -32,12 +32,10 @@
    to vendor the necessary winapi changes, until https://github.com/retep998/winapi-rs/pull/677
    is merged, and we pull in a new winapi version into gecko.
 
-5. You will need to apply the patch from https://bugzilla.mozilla.org/show_bug.cgi?id=1486861
-
-6. You will need to run MKLINK.bat in your mozilla-central checkout.  You may
+5. You will need to run MKLINK.bat in your mozilla-central checkout.  You may
    need to adjust the paths in MKLINK.bat if you install MSVC in a
    non-standard location.
 
-7. Once you have all of that, you should be able to pull mozilla-central
+6. Once you have all of that, you should be able to pull mozilla-central
    and build it with the mozconfig in this directory, adjusting all
    patchs to point at the relevant places on your machine.
