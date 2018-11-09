@@ -4,10 +4,7 @@ ac_add_options --target=aarch64-windows-mingw32
 # XXX too many things going wrong
 ac_add_options --disable-webrtc
 
-# Custom built rust with
-# https://github.com/rust-lang/rust/pull/54529 (may be on nightly)
-# https://github.com/rust-lang/rust/pull/54576 (may be on nightly)
-export RUSTC="/c/rust/build/x86_64-pc-windows-msvc/stage2/bin/rustc.exe"
+# Assume rustc on PATH is appropriate.
 
 # Up-to-date with aarch64 varargs fix
 export LLVM_CONFIG=/c/mozilla-central/clang/bin/llvm-config.exe
@@ -19,7 +16,6 @@ export WIN32_REDIST_DIR="/c/mozilla-central/WinRedistDir"
 
 export CC="/c/mozilla-central/VCPrevArm/cl.exe"
 export CXX="/c/mozilla-central/VCPrevArm/cl.exe"
-# Requires full-path AS fix
 export AS="/c/mozilla-central/VCPrevArm/armasm64.exe"
 export HOST_CC="/c/mozilla-central/VCPrevx86/cl.exe"
 export HOST_CXX="/c/mozilla-central/VCPrevx86/cl.exe"
