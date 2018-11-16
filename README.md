@@ -8,10 +8,11 @@
    Our win64-clang builds in automation should include this, and you
    can download an appropriate clang via `./mach artifact toolchain`.
 
-4. You will need to run MKLINK.bat in your mozilla-central checkout.  You may
-   need to adjust the paths in MKLINK.bat if you install MSVC in a
-   non-standard location.  You may also need to modify `moz_msvc_version`
-   and `moz_sdk_verion` at the top of the file.
+4. You will need to run MKLINK.bat in your mozilla-central checkout from
+   a cmd.exe shell.  You may need to adjust the paths in MKLINK.bat if
+   you install MSVC in a non-standard location.  You may also need to
+   modify `moz_msvc_version` and `moz_sdk_verion` at the top of the
+   file.
 
 5. Once you have all of that, you should be able to pull mozilla-central
    and build it with the mozconfig in this directory, adjusting all
