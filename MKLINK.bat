@@ -1,4 +1,4 @@
-set "moz_msvc_version=14.15.26726"
+set "moz_msvc_version=14.16.27023"
 set "moz_sdk_version=10.0.17134.0"
 
 
