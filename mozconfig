@@ -27,14 +27,6 @@ includes="-I /c/mozilla-central/INC1 -I /c/mozilla-central/INC2 -I /c/mozilla-ce
 export CXXFLAGS="$includes"
 export CFLAGS="$includes"
 
+# Note that these need to use *Windows-style* paths.  Using Unix-style paths
+# will result in obscure linker errors when you go to link host things.
 export HOST_LDFLAGS="-LIBPATH:c:/mozilla-central/HOST_LIB1 -LIBPATH:c:/mozilla-central/HOST_LIB2 -LIBPATH:c:/mozilla-central/HOST_LIB3 -LIBPATH:c:/mozilla-central/HOST_LIB4"
-#export LDFLAGS="-LIBPATH:/c/mozilla-central/LIB1:/c/mozilla-central/LIB2:/c/mozilla-central/LIB3:/c/mozilla-central/LIB4"
-
-
-
-
-
-
-
-
-
